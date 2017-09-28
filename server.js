@@ -1,7 +1,6 @@
 // Get dependencies
 const express = require('express');
 const path = require('path');
-const http = require('http');
 const bodyParser = require('body-parser');
 
 // Get our API routes
@@ -31,11 +30,8 @@ const port = process.env.PORT || '3000';
 app.set('port', port);
 
 /**
- * Create HTTP server.
- */
-const server = http.createServer(app);
-
-/**
  * Listen on provided port, on all network interfaces.
  */
-server.listen(port, () => console.log(`API running on localhost:${port}`));
+app.listen(app.get('port'), function() {
+  console.log('API is running on port', app.get('port'));
+});
