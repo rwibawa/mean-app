@@ -1,4 +1,5 @@
 # MeanApp
+Angular 4 + ExpressJS.
 [MEAN App tutorial](https://scotch.io/tutorials/mean-app-with-angular-2-and-the-angular-cli)
 
 ## 1. Setup
